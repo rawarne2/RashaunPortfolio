@@ -4,7 +4,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div>
-                
+                <p>List of projects</p>
             </div>
         )
     }

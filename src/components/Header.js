@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
     render() {
         return (
             <div>
                 <header className="Header">
-                    <nav className="Header-name">Rashaun Warner</nav>
-                    <div className="Nav">
-                        <nav>About Me</nav>
-                        <nav>Projects</nav>
-                        <nav>Contacts</nav>
-                    </div>
+                    <div className="Header-name">Rashaun Warner</div>
+                    <nav className="Nav">
+                            <Link to={`/bio`}>About Me</Link>
+                            <Link to={`/projects`}>Projects</Link>
+                            <Link to={`/contacts`}>Contacts</Link>
+                    </nav>
                 </header>
             </div>
         )
     }
 }
 
-//download library for sticky header
+
 
