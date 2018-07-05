@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Bio from './Bio';
 import Projects from './Projects';
+import Blog from './Blog';
 
 export default class Main extends Component {
     render () {
@@ -10,7 +11,7 @@ export default class Main extends Component {
                     <Route exact path="/" component={Bio} />
                     <Route exact path="/bio" component={Bio} />
                     <Route exact path="/projects" component={Projects} />
-                    {/*<Route exact path="/contacts" component={Contacts} />  add a contacts component*/}
+                    <Route exact path="/blog" component={Blog} />
 
                 </Switch>
         )

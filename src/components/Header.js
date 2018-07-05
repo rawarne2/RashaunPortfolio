@@ -10,7 +10,7 @@ export default class Header extends Component {
                     <nav className="Nav">
                             <Link to={`/bio`}>About Me</Link>
                             <Link to={`/projects`}>Projects</Link>
-                            <Link to={`/contacts`}>Contacts</Link>
+                            <Link to={`/blog`}>Blog</Link>
                     </nav>
                 </header>
             </div>
