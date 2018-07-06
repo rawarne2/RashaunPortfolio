@@ -3,9 +3,9 @@ import React, { Component }  from 'react'
 export default class Blog extends Component {
     render () {
         return (
-            <div className="Blog">
+            <div className="Content">
                 <h1>Check out my blog posts on Medium!</h1>
-                <div className="Blog-box">
+                <div className="Box">
                     <a href="https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c">
                         <img src={require('../ES8-blog.png')} className="Blog-pics" />
                     </a>

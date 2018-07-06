@@ -4,12 +4,14 @@ import YouTube from 'react-youtube'
 export default class Projects extends Component {
     render() {
         return (
-            <div>
-                <p>List of projects</p>
-                <YouTube videoId="C6Lc_XBkEWU"/>
+            <div className="Content">
+                <h1>List of projects</h1>
+                <div className="Box">
+                <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}}/>
                 <p>NutriYum is a mobile app built with React Native for iOS and Android.
                 NutriYum keeps track of of all the nutrients in what you eat so you dont have to, making your diet managment as simple and easy as possible.
                 All you have to do is snap what you eat then bon appétit!</p>{/* maybe add something about how this was a group project */}
+            </div>
             </div>
         )
     }
