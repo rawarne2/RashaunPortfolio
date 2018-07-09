@@ -14,7 +14,7 @@ export default class Bio extends Component {
                     more about what I know and what I've created. Please get in touch with me if you are interested in having
                     me join your development team or just want to know more about my skills. 
                 </p>
-                <img src={require('../computer-photo.jpg')} />
+                <img src={require('../computer-photo.jpg')} alt="Unable to load" />
             </div>
         )
     }

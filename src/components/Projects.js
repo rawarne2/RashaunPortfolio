@@ -5,13 +5,20 @@ export default class Projects extends Component {
     render() {
         return (
             <div className="Content">
-                <h1>List of projects</h1>
+                <h1>Some of my projects</h1>
                 <div className="Box">
-                <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}}/>
-                <p>NutriYum is a mobile app built with React Native for iOS and Android.
-                NutriYum keeps track of of all the nutrients in what you eat so you dont have to, making your diet managment as simple and easy as possible.
-                All you have to do is snap what you eat then bon appétit!</p>{/* maybe add something about how this was a group project */}
+                    <h2>NutriYum</h2>
+                    <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}} alt="Unable to load"/>
+                    <p>NutriYum is a mobile app built with React Native for iOS and Android.
+                    NutriYum keeps track of of all the nutrients in what you eat so you dont have to, making your diet managment as simple and easy as possible.
+                    All you have to do is snap what you eat then bon appétit!</p>{/* maybe add something about how this was a group project */}
             </div>
+            <div className="Box">
+                <h2>Grace Shopper</h2>
+                <img className="Proj-img" src={require('../grace-shopper.png')} alt="Unable to load"/>
+                <p>This is an e-commerce website for random items</p>
+            </div>
+            <h3>I'm constantly adding more so come back often to see what I'm up to!</h3>
             </div>
         )
     }
