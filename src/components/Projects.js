@@ -15,7 +15,7 @@ export default class Projects extends Component {
             </div>
             <div className="Box">
                 <h2>Grace Shopper</h2>
-                <img className="Proj-img" src={require('../grace-shopper.png')} alt="Unable to load"/>
+                <img className="Proj-img" src={require('../images/grace-shopper.png')} alt="Unable to load"/>
                 <p>This is an e-commerce website for random items</p>
             </div>
             <h3>I'm constantly adding more so come back often to see what I'm up to!</h3>
