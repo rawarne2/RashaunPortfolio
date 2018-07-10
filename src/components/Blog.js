@@ -6,7 +6,7 @@ export default class Blog extends Component {
             <div className="Content">
                 <h1>Check out my blog posts on Medium!</h1>
                 <div className="Box">
-                    <a href="https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c">
+                    <a href="https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c" target="_blank">
                         <img src={require('../images/ES8-blog.png')} alt="Unable to load" className="Blog-pics" />
                     </a>
                     <p>Learn about the new features that were made available in ES8</p>
