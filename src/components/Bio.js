@@ -10,8 +10,8 @@ export default class Bio extends Component {
                     University of Illinois at Urbana-Champaign in 2016 with a kinesiology degree. After working
                     in the health and fitness industry, I realized that I wanted to be more creative and mentally 
                     challenged. That's when I stumbled upon coding! I started to teach myself on my own but then decided
-                    to go to a coding bootcamp. I recently completed Fullstack Academy of Code after 17 weeks of intensive 
-                    learing and building. Please get in touch with me if you are interested in having
+                    to go to a coding bootcamp. I recently completed Fullstack Academy of Code's immersive software 
+                    engineering bootcamp. Please get in touch with me if you are interested in having
                     me join your development team or just want to know more about my skills. 
                 </p>
                 <div className="Skills">
@@ -25,17 +25,19 @@ export default class Bio extends Component {
                     <img src={require('../images/git.png')} alt="Unable to load" />
                     <img src={require('../images/JavaScript.png')} alt="Unable to load" />
                     <img src={require('../images/node.png')} alt="Unable to load" />
+                    <img src={require('../images/sql.png')} alt="Unable to load" />
+                    <img src={require('../images/npm.png')} alt="Unable to load" />
+                    <img src={require('../images/sequelize.png')} alt="Unable to load" />
+                    <img src={require('../images/jquery.gif')} alt="Unable to load" />
+                    <img src={require('../images/heroku.jpg')} alt="Unable to load" />
                 </div>
             </div>
         )
     }
 }
 
-//languages: Javascript, HTML, CSS, SQL, 
-//libraries: React, React Native, Redux, 
-//software: npm
-//other: Sequelize, Node
-//framework: Express.js
-//version control: git
+
+
+//heroku, jQuery, 
 
 //add boxes that list languages, tools, platforms, etc.

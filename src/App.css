@@ -1,12 +1,10 @@
 .App {
   background-color: rgb(224, 224, 224);
-  padding: 0% 3%;
+  padding: 8% 3% 15% 3%;
   overflow-y: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 7%;
-  padding-bottom: 15%;
 }
 
 
@@ -83,8 +81,10 @@
   right: 0;
 }
 
+
+
 .Header-name {
-  font-size: 5vw;
+  font-size: 6vw;
   justify-content: center;
   white-space: nowrap;
 }
@@ -98,10 +98,10 @@ h2 {
 }
 
 .Nav {
-  font-size: 2.5vw;
+  font-size: 3vw;
   display: flex;
   align-items: center;
-  margin: 0% 0% 0% 12%;
+  margin: 0% 0% 0% 13%;
 }
 
 .Nav a {
@@ -131,7 +131,6 @@ h2 {
   border-top-style: double;
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
-  padding: 1%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -140,6 +139,7 @@ h2 {
 
 .Footer p {
   margin: 0px;
+  font-size: 3vw
 }
 
 .Social {
@@ -162,7 +162,29 @@ h2 {
   min-height: 250px;
 }
 
+@media screen and (max-width: 600px) {
+  .Header {
+    flex-direction: column;
+  }
+
+  .Header-name {
+    font-size: 7vw;
+  }
+
+  .Nav {
+    margin: 0%;
+    font-size: 5vw;
+  }
+
+  .App {
+    padding: 20% 3% 25% 3%;
+  }
+}
+
 /* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 } */
+
+
+/* reorganize css file to use media queries and style mobile first */
