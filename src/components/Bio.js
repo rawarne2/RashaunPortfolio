@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Bio extends Component {
     render() {
         return (
-            <div className="Bio">
+            <div className="Bio Content">
             <img src={require('../images/computer-photo.jpg')} alt="Unable to load" />
                 <p>
                     Hello! I am a fullstack web developer looking to begin my career. I graduated from the 
