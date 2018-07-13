@@ -4,7 +4,7 @@ export default class Bio extends Component {
     render() {
         return (
             <div className="Bio Content">
-            <img src={require('../images/computer-photo.jpg')} alt="Unable to load" />
+            <img src={require('../images/computer-photo.jpg')} alt="Unable to load" className="Profile-pic"/>
                 <p>
                     Hello! I am a fullstack web developer looking to begin my career. I graduated from the 
                     University of Illinois at Urbana-Champaign in 2016 with a kinesiology degree. After working
