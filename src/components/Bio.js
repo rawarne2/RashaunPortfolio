@@ -4,7 +4,7 @@ export default class Bio extends Component {
     render() {
         return (
             <div className="Bio Content">
-            <img src={require('../images/computer-photo.jpg')} alt="Unable to load" className="Profile-pic"/>
+            <img src={require('../images/computer-photo.jpg')} alt={require('../images/error-image.jpg')} className="Profile-pic"/>
                 <p>
                     Hello! I am a fullstack web developer looking to begin my career. I graduated from the 
                     University of Illinois at Urbana-Champaign in 2016 with a kinesiology degree. After working
@@ -16,20 +16,20 @@ export default class Bio extends Component {
                 </p>
                 <div className="Skills">
                 <h1>Here are my skills!</h1>
-                    <img src={require('../images/react.png')} alt="Unable to load" />
-                    <img src={require('../images/react-native.png')} alt="Unable to load" />
-                    <img src={require('../images/redux.png')} alt="Unable to load" />
-                    <img src={require('../images/html.png')} alt="Unable to load" />
-                    <img src={require('../images/css.jpg')} alt="Unable to load" />
-                    <img src={require('../images/express.png')} alt="Unable to load" />
-                    <img src={require('../images/git.png')} alt="Unable to load" />
-                    <img src={require('../images/JavaScript.png')} alt="Unable to load" />
-                    <img src={require('../images/node.png')} alt="Unable to load" />
-                    <img src={require('../images/sql.png')} alt="Unable to load" />
-                    <img src={require('../images/npm.png')} alt="Unable to load" />
-                    <img src={require('../images/sequelize.png')} alt="Unable to load" />
-                    <img src={require('../images/jquery.gif')} alt="Unable to load" />
-                    <img src={require('../images/heroku.jpg')} alt="Unable to load" />
+                    <img src={require('../images/react.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/react-native.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/redux.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/html.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/css.jpg')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/express.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/git.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/JavaScript.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/node.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/sql.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/npm.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/sequelize.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/jquery.gif')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/heroku.jpg')} alt={require('../images/error-image.jpg')} />
                 </div>
             </div>
         )

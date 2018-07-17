@@ -8,21 +8,21 @@ export default class Projects extends Component {
                 <h1>Some of my projects</h1>
                 <div className="Box">
                     <h2>NutriYum</h2>
-                    <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}} alt="Unable to load" className="YouTube"/>
+                    <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}} alt={require('../images/error-image.jpg')} className="YouTube"/>
                     <p>NutriYum is a mobile app built with React Native for iOS and Android.
                     NutriYum keeps track of of all the nutrients in what you eat so you dont have to, making your diet managment as simple and easy as possible.
                     All you have to do is snap what you eat then bon appétit!</p>{/* maybe add something about how this was a group project */}
             </div>
             <div className="Box">
                 <h2>Grace Shopper</h2>
-                <a href="http://graceshopper-furby.herokuapp.com/products" target="_blank">
-                <img className="Proj-img" src={require('../images/grace-shopper.png')} alt="Unable to load" />
+                <a href="http://graceshopper-furby.herokuapp.com/products" target="_blank" rel="noopener noreferrer">
+                <img className="Proj-img" src={require('../images/grace-shopper.png')} alt={require('../images/error-image.jpg')} />
                 </a>
                 <p>This is an e-commerce website for random items</p>
             </div>
             <div className="Box">
                 <h2>Meal Wheel</h2>
-                <video className="Proj-img" src={require('../images/meal-wheel-demo.mov')} alt="Unable to load" controls={true}/>
+                <video className="Proj-img" src={require('../images/meal-wheel-demo.mov')} alt={require('../images/meal-wheel-pic.PNG')} controls={true} />
                 <p>Can you never decide on where to go out to eat? If so then this is the app for you! Meal Wheel 
                     lets you enter as many restaurants as you want and puts it on the wheel. Then you can either try 
                     to land on a certain one if your quick enough, or just randomly stop it. This app was built with React Native.</p>
