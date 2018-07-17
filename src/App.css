@@ -8,12 +8,6 @@
 }
 
 
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-} */
-
-
 .Bio p {
   font-size: 120%;
   padding: 0% 10%;
@@ -21,20 +15,6 @@
 
 .Bio * {
   padding: 20px;
-}
-
-.Profile-pic{
-  border-radius: 15%;
-  height: 35%;
-  width: 35%;
-  min-height: 200px;
-  min-width: 200px;
-  max-height: 450px;
-  max-width: 450px
-}
-
-.Content {
-  width: 80%;
 }
 
 .Blog-pics {
@@ -61,60 +41,9 @@
   padding: 10px;
 }
 
-.Header {
-  background-color: rgb(82, 82, 82);
-  padding: 0% 4% 0% 4%;
-  color: white;
-  border-bottom-color: rgb(135, 206, 235);
-  border-bottom-width: 1.5vw;
-  border-bottom-style: double;
-  display: flex;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.Content {
+  width: 75%;
 }
-
-
-
-.Header-name {
-  font-size: 6vw;
-  justify-content: center;
-  white-space: nowrap;
-}
-
-h2 {
-  border-bottom: 5px solid rgb(135, 206, 235);
-}
-
-* {
-  text-align: center;
-}
-
-.Nav {
-  font-size: 3vw;
-  display: flex;
-  align-items: center;
-  margin: 0% 0% 0% 13%;
-}
-
-.Nav a {
-  padding: 0vw 1.5vw;
-  white-space: nowrap;
-  flex: 1;
-  color: white;
-  text-decoration: none;
-}
-
-.Proj-img {
-  width: 50vw;
-  height: 40vw;
-  min-width: 250px;
-  min-height: 250px;
-}
-
 .Footer {
   background-color: rgb(82, 82, 82);
   color: white;
@@ -123,7 +52,7 @@ h2 {
   align-items: center;
   justify-content: center;
   border-top-color: rgb(135, 206, 235);
-  border-top-width: 1.5vw;
+  border-top-width: 1vw;
   border-top-style: double;
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
@@ -137,6 +66,68 @@ h2 {
   margin: 0px;
   font-size: 3vw
 }
+
+.Header {
+  background-color: rgb(82, 82, 82);
+  padding: 0% 4% 0% 4%;
+  color: white;
+  border-bottom-color: rgb(135, 206, 235);
+  border-bottom-width: 1vw;
+  border-bottom-style: double;
+  display: flex;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.Header-name {
+  font-size: 4.5vw;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+h2 {
+  border-bottom: 5px solid rgb(135, 206, 235);
+}
+
+* {
+  text-align: center;
+}
+
+.Nav {
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+  margin: 0% 0% 0% 13%;
+}
+
+.Nav a {
+  padding: 0vw 1.5vw;
+  white-space: nowrap;
+  flex: 1;
+  color: white;
+  text-decoration: none;
+}
+
+.Profile-pic{
+  border-radius: 15%;
+  height: 35%;
+  width: 35%;
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 450px;
+  max-width: 450px
+}
+.Proj-img {
+  width: 50vw;
+  height: 40vw;
+  min-width: 250px;
+  min-height: 250px;
+}
+
 
 .Nav *:hover {
   background-color: rgb(84, 100, 107);
@@ -186,17 +177,7 @@ h2 {
   .Content {
     width: 100%;
   }
-
-  /* .Skills img {
-    height: 5%;
-    width: 5%;
-  } */
 }
-
-/* @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
 
 
 /* reorganize css file to use media queries and style mobile first */
