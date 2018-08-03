@@ -30,6 +30,9 @@ export default class Bio extends Component {
                     <img src={require('../images/sequelize.png')} alt={require('../images/error-image.jpg')} />
                     <img src={require('../images/jquery.gif')} alt={require('../images/error-image.jpg')} />
                     <img src={require('../images/heroku.jpg')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/chai.png')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/jasmine.svg')} alt={require('../images/error-image.jpg')} />
+                    <img src={require('../images/mocha.jpg')} alt={require('../images/error-image.jpg')} />
                 </div>
             </div>
         )
