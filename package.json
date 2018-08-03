@@ -19,5 +19,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "localhost:3000"
+  "homepage": "http://www.rashaunwarner.com"
 }
