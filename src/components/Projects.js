@@ -36,7 +36,7 @@ export default class Projects extends Component {
                 </div>
                 <h3>These are just a few of the projects that I have worked on. Although the projects above are not perfect, they were created to learn new concepts. 
                     I'm constantly adding more projects and updating these so come back often to see what I'm up to!</h3>
-                <h4>I am currently working on creating a website with stats for fantasy football. </h4>
+                <h4>I am currently working on creating a website to easily search for NBA stats. Checkout my progress here: https://github.com/rawarne2/nba-stats </h4>
             </div>
         )
     }
