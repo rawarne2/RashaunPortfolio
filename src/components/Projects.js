@@ -65,9 +65,13 @@ export default class Projects extends Component {
                         work on this project and it was my first interaction with React Native. This app can track how far you run or bike and a timer to let you know how 
                         long you have been active. There is also an audible notification every 5 minutes that lets you know how far you have traveled.</p>
                 </div>
-                <h3>These are just a few of the projects that I have worked on. Although the projects above are not perfect, they were created to learn new concepts. 
-                    I'm constantly adding more projects and updating these so come back often to see what I'm up to!</h3>
-                <h4>I am currently working on creating a website to easily search for NBA stats. Checkout my progress here: https://nba-stats-search.herokuapp.com/ </h4>
+                <h3>These are just a few of the projects that I have worked on. These projects were made to practice skills that I already have, as well as to learn new ones. 
+                    I'm constantly updating these and adding new ones, so come back often to see what I'm up to!</h3>
+                <h4>I am currently working on creating a website to easily search for NBA stats. Checkout my progress here:<br/> 
+                    <a href="https://nba-stats-search.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        https://nba-stats-search.herokuapp.com/ 
+                    </a>
+                </h4>
             </div>
         )
     }
