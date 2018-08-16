@@ -5,10 +5,6 @@ export default class Projects extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            show1: true,
-            show2: false,
-            show3: false, 
-            show4: false,
             num: 1, 
             show1: 'block',
             show2: 'none', 
