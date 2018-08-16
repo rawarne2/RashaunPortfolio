@@ -41,6 +41,4 @@ export default class Bio extends Component {
 
 
 
-//heroku, jQuery, 
-
-//add boxes that list languages, tools, platforms, etc.
+//give discription of each skill in a "learn more" dropdown menue 
