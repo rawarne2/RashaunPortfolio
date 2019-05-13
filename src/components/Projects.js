@@ -10,18 +10,17 @@ export default class Projects extends Component {
             show2: 'none', 
             show3: 'none',
             show4: 'none',
+            show5: 'none',
+            show6: 'none'
         }
-        this.showProj1 = this.showProj1.bind(this)
-        this.showProj2 = this.showProj2.bind(this)
-        this.showProj3 = this.showProj3.bind(this)
-        this.showProj4 = this.showProj4.bind(this)
-
     }
 
-    showProj1 = (event) => this.setState({show1: 'block', show2: 'none', show3: 'none', show4: 'none'})
-    showProj2 = (event) => this.setState({ show1: 'none', show2: 'block', show3: 'none', show4: 'none' })
-    showProj3 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'block', show4: 'none' })
-    showProj4 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'block' })
+    showProj1 = (event) => this.setState({ show1: 'block', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none' })
+    showProj2 = (event) => this.setState({ show1: 'none', show2: 'block', show3: 'none', show4: 'none', show5: 'none', show6: 'none' })
+    showProj3 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'block', show4: 'none', show5: 'none', show6: 'none' })
+    showProj4 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'block', show5: 'none', show6: 'none' })
+    showProj5 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'block', show6: 'none' })
+    showProj6 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'block' })
 
     render() {      
         return (
@@ -32,6 +31,8 @@ export default class Projects extends Component {
                 <h3 onClick={this.showProj2} id="2">Grace Shopper</h3>
                 <h3 onClick={this.showProj3} id="3">Meal Wheel</h3>
                 <h3 onClick={this.showProj4} id="4">Fullstack Fitness</h3>
+                <h3 onClick={this.showProj5} id="5">NBA Stats Search</h3>
+                <h3 onClick={this.showProj6} id="6">LCA Properties, LLC</h3>
             </div>
                 <div className="Box proj" style={{display: this.state.show1}}>
                     <h2>NutriYum</h2>
@@ -61,13 +62,26 @@ export default class Projects extends Component {
                         work on this project and it was my first interaction with React Native. This app can track how far you run or bike and a timer to let you know how 
                         long you have been active. There is also an audible notification every 5 minutes that lets you know how far you have traveled.</p>
                 </div>
-                <h3>These are just a few of the projects that I have worked on. These projects were made to practice skills that I already have, as well as to learn new ones. 
-                    I'm constantly updating these and adding new ones, so come back often to see what I'm up to!</h3>
-                <h4>I am currently working on creating a website to easily search for NBA stats. Checkout my progress here:<br/> 
+                <div className="Box proj" style={{display: this.state.show5}}>
+                    <h2>NBA Stats Search</h2>
                     <a href="https://nba-stats-search.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        https://nba-stats-search.herokuapp.com/ 
+                        <img className="Proj-img" src={require('../images/nba-stats.png')} alt={require('../images/error-image.jpg')} />
                     </a>
-                </h4>
+                    <p>This application allows users to search for the major NBA stats by player name. It is made using React and Redux</p>
+                </div>
+                <div className="Box proj" style={{display: this.state.show6}}>
+                <h2>LCA Properties, LLC</h2>
+                <a href="https://lca-properties.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="Proj-img" src={require('../images/lca.png')} alt={require('../images/error-image.jpg')} />
+                </a>
+                <p>This application provides information about LCA Properties, LLC and allows residents to submit maintanance requrests. This will 
+                    eventually be used by real residents and showcase more properties when it is complete. It was made using an Angular frontend
+                     with a Spring Boot backend.
+                </p>
+            </div>
+                <h3>These are just a few of the projects that I have worked on. These projects were made to practice skills that I already have, as well as to learn new ones. 
+                    I'm constantly updating these and adding new ones, so come back often to see what I'm up to! After learning a variety of new skills during my apprenticeship, 
+                    I have realized that there is a lot of room for improvement for these projects even though they are just proof of concept.</h3>
             </div>
         )
     }
