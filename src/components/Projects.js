@@ -11,16 +11,18 @@ export default class Projects extends Component {
             show3: 'none',
             show4: 'none',
             show5: 'none',
-            show6: 'none'
+            show6: 'none',
+            show7: 'none',
         }
     }
 
-    showProj1 = (event) => this.setState({ show1: 'block', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none' })
-    showProj2 = (event) => this.setState({ show1: 'none', show2: 'block', show3: 'none', show4: 'none', show5: 'none', show6: 'none' })
-    showProj3 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'block', show4: 'none', show5: 'none', show6: 'none' })
-    showProj4 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'block', show5: 'none', show6: 'none' })
-    showProj5 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'block', show6: 'none' })
-    showProj6 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'block' })
+    showProj1 = (event) => this.setState({ show1: 'block', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
+    showProj2 = (event) => this.setState({ show1: 'none', show2: 'block', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
+    showProj3 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'block', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
+    showProj4 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'block', show5: 'none', show6: 'none', show7: 'none' })
+    showProj5 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'block', show6: 'none', show7: 'none' })
+    showProj6 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'block', show7: 'none' })
+    showProj7 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'block' })
 
     render() {      
         return (
@@ -33,6 +35,7 @@ export default class Projects extends Component {
                 <h3 onClick={this.showProj4} id="4">Fullstack Fitness</h3>
                 <h3 onClick={this.showProj5} id="5">NBA Stats Search</h3>
                 <h3 onClick={this.showProj6} id="6">LCA Properties, LLC</h3>
+                <h3 onClick={this.showProj7} id="7">In Development</h3>
             </div>
                 <div className="Box proj" style={{display: this.state.show1}}>
                     <h2>NutriYum</h2>
@@ -70,18 +73,30 @@ export default class Projects extends Component {
                     <p>This application allows users to search for the major NBA stats by player name. It is made using React and Redux</p>
                 </div>
                 <div className="Box proj" style={{display: this.state.show6}}>
-                <h2>LCA Properties, LLC</h2>
-                <a href="https://lca-properties.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="Proj-img" src={require('../images/lca.png')} alt={require('../images/error-image.jpg')} />
-                </a>
-                <p>This application provides information about LCA Properties, LLC and allows residents to submit maintanance requrests. This will 
-                    eventually be used by real residents and showcase more properties when it is complete. It was made using an Angular frontend
-                     with a Spring Boot backend.
-                </p>
-            </div>
+                    <h2>LCA Properties, LLC</h2>
+                    <a href="http://www.lcaresidentialproperties.com/" target="_blank" rel="noopener noreferrer">
+                        <img className="Proj-img" src={require('../images/lca.png')} alt={require('../images/error-image.jpg')} />
+                    </a>
+                    <p>This application provides information about LCA Properties, LLC and allows residents to submit maintenance requests. This will 
+                        eventually be used by real residents and showcase more properties when it is complete. It was made using an Angular frontend
+                        with express and node on the backend.
+                    </p>
+                </div>
+                <div className="Box proj" style={{display: this.state.show7}}>
+                    <h2>Fitness App</h2>
+
+                    <p>
+                        This is a React Native application that currently uses Amazon Cognito for user management and authentication. It will also use
+                        Redux, TypeScript, GraphQL, Graphene, PostreSQL, Apollo, and Jest. This app will allow trainers to upload exercise videos and
+                        create currated workouts for their client. This will also include a a library of exercises, create your own workout, 
+                        nutrition tracker, exercise of the day, and more!
+                    </p>
+                </div>
                 <h3>These are just a few of the projects that I have worked on. These projects were made to practice skills that I already have, as well as to learn new ones. 
                     I'm constantly updating these and adding new ones, so come back often to see what I'm up to! After learning a variety of new skills during my apprenticeship, 
-                    I have realized that there is a lot of room for improvement for these projects even though they are just proof of concept.</h3>
+                    I have realized that there is a lot of room for improvement for these projects even though they are just proof of concept. My current goal is to put the 
+                    Fitness App in the App Store. 
+                </h3>
             </div>
         )
     }

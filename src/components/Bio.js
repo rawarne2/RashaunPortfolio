@@ -22,6 +22,12 @@ export default class Bio extends Component {
                     a company called Gaslight who helped me get up to speed, taught me best practices, and more so that I can begin 
                     my career on the right foot. The apprenticeship also included book clubs, algorithm challenges, and side projects. 
                 </p>
+                <br />
+                <p>
+                    I am currently a fullstack web developer at Kinetic Vision. For this position, I help plan and develop projects from beginning to end.
+                    This includes scoping, estimates, feature design, development, bug fixes, documentation, and deployment. I also meet with clients to review 
+                    features and discuss next steps. In addition, I review code and help co-ops and other developers improve their skills. 
+                </p>
                 <p>
                     Please get in touch with me if you are interested in having
                     me join your development team or just want to know more about my skills. 
@@ -45,7 +51,10 @@ export default class Bio extends Component {
                     <img src={require('../images/chai.png')} alt={require('../images/error-image.jpg')} />
                     <img src={require('../images/jasmine.svg')} alt={require('../images/error-image.jpg')} />
                     <img src={require('../images/mocha.jpg')} alt={require('../images/error-image.jpg')} />
-                    <h3>Also, Java, Spring, Spring Boot, Angular, Ngrx, Rxjs, Pivotal Cloud Foundry, and Jest</h3>
+                    <h3>
+                        Also, Java, Spring, Spring Boot, Angular, Ngrx, Rxjs, Pivotal Cloud Foundry, Jest,
+                        Python, Tornado, TypeScript, and Docker.
+                    </h3>
                 </div>
             </div>
         )
