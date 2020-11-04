@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "express": "^4.16.4",
-    "mocha": "^5.2.0",
-    "npm": "^6.9.0",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1",
+    "npm": "^7.0.8",
     "path": "^0.12.7",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.5",
-    "react-social-icons": "^3.1.0",
-    "react-youtube": "^7.9.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "react-social-icons": "^4.1.0",
+    "react-youtube": "^7.13.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,5 +20,17 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://www.rashaunwarner.com"
+  "homepage": "http://www.rashaunwarner.com",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

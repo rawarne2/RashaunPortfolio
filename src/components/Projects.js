@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import YouTube from 'react-youtube'
+import graceShopperPhoto from '../images/grace-shopper.png'
+import mealWheelDemo from '../images/meal-wheel-demo.mov'
+import mealWheelPhoto from '../images/meal-wheel-pic.PNG'
+import nbaStatsPhoto from '../images/nba-stats.png'
+import lcaPhoto from '../images/lca.png'
 
 export default class Projects extends Component {
     constructor(props) {
@@ -39,28 +44,28 @@ export default class Projects extends Component {
             </div>
                 <div className="Box proj" style={{display: this.state.show1}}>
                     <h2>NutriYum</h2>
-                    <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}} alt={require('../images/error-image.jpg')} className="YouTube"/>
+                    <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}} alt="Error" className="YouTube"/>
                     <p>NutriYum is a mobile app built with React Native for iOS and Android.
-                    NutriYum keeps track of of all the nutrients in what you eat so you dont have to, making your diet managment as simple and easy as possible.
+                    NutriYum keeps track of of all the nutrients in what you eat so you don't have to, making your diet managment as simple and easy as possible.
                     All you have to do is snap what you eat then bon appétit!</p>{/* maybe add something about how this was a group project */}
                 </div>
                 <div className="Box proj" style={{display: this.state.show2}}>
                     <h2>Grace Shopper</h2>
                     <a href="http://graceshopper-furby.herokuapp.com/products" target="_blank" rel="noopener noreferrer">
-                    <img className="Proj-img" src={require('../images/grace-shopper.png')} alt={require('../images/error-image.jpg')} />
+                    <img className="Proj-img" src={graceShopperPhoto} alt="Error" />
                     </a>
                     <p>This is an e-commerce website for random items</p>
                 </div>
                 <div className="Box proj" style={{display: this.state.show3}}>
                     <h2>Meal Wheel</h2>
-                    <video className="Proj-img" src={require('../images/meal-wheel-demo.mov')} alt={require('../images/meal-wheel-pic.PNG')} controls={true} />
+                    <video className="Proj-img" src={mealWheelDemo} alt={mealWheelPhoto} controls={true} />
                     <p>Can you never decide on where to go out to eat? If so then this is the app for you! Meal Wheel 
                         lets you enter as many restaurants as you want and puts it on the wheel. Then you can either try 
                         to land on a certain one if your quick enough, or just randomly stop it. This app was built with React Native.</p>
                 </div>
                 <div className="Box proj" style={{display: this.state.show4}}>
                     <h2>Fullstack Fitness</h2>
-                    <YouTube videoId="6APp1UMvJSI" opts={{width: "100%"}} alt={require('../images/error-image.jpg')} className="YouTube"/>
+                    <YouTube videoId="6APp1UMvJSI" opts={{width: "100%"}} alt="Error" className="YouTube"/>
                     <p>Fullstack Fitness is a React Native mobile application that I created for my Hackathon project at Fullstack Academy. I had just over 2 class days to
                         work on this project and it was my first interaction with React Native. This app can track how far you run or bike and a timer to let you know how 
                         long you have been active. There is also an audible notification every 5 minutes that lets you know how far you have traveled.</p>
@@ -68,14 +73,14 @@ export default class Projects extends Component {
                 <div className="Box proj" style={{display: this.state.show5}}>
                     <h2>NBA Stats Search</h2>
                     <a href="https://nba-stats-search.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="Proj-img" src={require('../images/nba-stats.png')} alt={require('../images/error-image.jpg')} />
+                        <img className="Proj-img" src={nbaStatsPhoto} alt="Error" />
                     </a>
                     <p>This application allows users to search for the major NBA stats by player name. It is made using React and Redux</p>
                 </div>
                 <div className="Box proj" style={{display: this.state.show6}}>
                     <h2>LCA Properties, LLC</h2>
                     <a href="http://www.lcaresidentialproperties.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="Proj-img" src={require('../images/lca.png')} alt={require('../images/error-image.jpg')} />
+                        <img className="Proj-img" src={lcaPhoto} alt="Error" />
                     </a>
                     <p>This application provides information about LCA Properties, LLC and allows residents to submit maintenance requests. This will 
                         eventually be used by real residents and showcase more properties when it is complete. It was made using an Angular frontend
