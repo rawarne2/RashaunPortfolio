@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header'
 import Bio from './components/Bio'
@@ -8,25 +8,22 @@ import Blog from './components/Blog'
 import Main from './components/Main'
 import { BrowserRouter as Router } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <Header />
-          <Main>
-            <Bio />
-            <Projects /> 
-            <Blog />
-          </Main>
-          <Footer />
-        </div>
-      </Router>
-    );
-  }
+export default function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Main>
+          <Bio />
+          <Projects /> 
+          <Blog />
+        </Main>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App;
 
 
 //add pics and links to projects component

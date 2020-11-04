@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import computerPhoto from "../images/computer-photo.jpg";
 import ReactPhoto from "../images/react.png";
 import reactNativePhoto from "../images/react-native.png";

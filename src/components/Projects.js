@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import YouTube from 'react-youtube'
 import graceShopperPhoto from '../images/grace-shopper.png'
 import mealWheelDemo from '../images/meal-wheel-demo.mov'
@@ -6,78 +6,75 @@ import mealWheelPhoto from '../images/meal-wheel-pic.PNG'
 import nbaStatsPhoto from '../images/nba-stats.png'
 import lcaPhoto from '../images/lca.png'
 
-export default class Projects extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            num: 1, 
-            show1: 'block',
-            show2: 'none', 
-            show3: 'none',
-            show4: 'none',
-            show5: 'none',
-            show6: 'none',
-            show7: 'none',
-        }
-    }
+export default function Projects() {
 
-    showProj1 = (event) => this.setState({ show1: 'block', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
-    showProj2 = (event) => this.setState({ show1: 'none', show2: 'block', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
-    showProj3 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'block', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
-    showProj4 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'block', show5: 'none', show6: 'none', show7: 'none' })
-    showProj5 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'block', show6: 'none', show7: 'none' })
-    showProj6 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'block', show7: 'none' })
-    showProj7 = (event) => this.setState({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'block' })
+    const [projects, setProjects] = useState({
+        num: 1, 
+        show1: 'block',
+        show2: 'none', 
+        show3: 'none',
+        show4: 'none',
+        show5: 'none',
+        show6: 'none',
+        show7: 'none',
+    })
 
-    render() {      
+    const showProj1 = () => setProjects({ show1: 'block', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
+    const showProj2 = () => setProjects({ show1: 'none', show2: 'block', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
+    const showProj3 = () => setProjects({ show1: 'none', show2: 'none', show3: 'block', show4: 'none', show5: 'none', show6: 'none', show7: 'none' })
+    const showProj4 = () => setProjects({ show1: 'none', show2: 'none', show3: 'none', show4: 'block', show5: 'none', show6: 'none', show7: 'none' })
+    const showProj5 = () => setProjects({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'block', show6: 'none', show7: 'none' })
+    const showProj6 = () => setProjects({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'block', show7: 'none' })
+    const showProj7 = () => setProjects({ show1: 'none', show2: 'none', show3: 'none', show4: 'none', show5: 'none', show6: 'none', show7: 'block' })
+   
         return (
             <div className="Content">
             <h1>Some of my projects</h1>
             <div className="ProjectNav">
-                <h3 onClick={this.showProj1} id="1">NutriYum</h3>
-                <h3 onClick={this.showProj2} id="2">Grace Shopper</h3>
-                <h3 onClick={this.showProj3} id="3">Meal Wheel</h3>
-                <h3 onClick={this.showProj4} id="4">Fullstack Fitness</h3>
-                <h3 onClick={this.showProj5} id="5">NBA Stats Search</h3>
-                <h3 onClick={this.showProj6} id="6">LCA Properties, LLC</h3>
-                <h3 onClick={this.showProj7} id="7">In Development</h3>
+                <h3 onClick={showProj1} id="1">NutriYum</h3>
+                <h3 onClick={showProj2} id="2">Grace Shopper</h3>
+                <h3 onClick={showProj3} id="3">Meal Wheel</h3>
+                <h3 onClick={showProj4} id="4">Fullstack Fitness</h3>
+                <h3 onClick={showProj5} id="5">NBA Stats Search</h3>
+                <h3 onClick={showProj6} id="6">LCA Properties, LLC</h3>
+                <h3 onClick={showProj7} id="7">In Development</h3>
             </div>
-                <div className="Box proj" style={{display: this.state.show1}}>
+                <div className="Box proj" style={{display: projects.show1}}>
                     <h2>NutriYum</h2>
                     <YouTube videoId="C6Lc_XBkEWU" opts={{width: "100%"}} alt="Error" className="YouTube"/>
                     <p>NutriYum is a mobile app built with React Native for iOS and Android.
                     NutriYum keeps track of of all the nutrients in what you eat so you don't have to, making your diet managment as simple and easy as possible.
                     All you have to do is snap what you eat then bon appétit!</p>{/* maybe add something about how this was a group project */}
                 </div>
-                <div className="Box proj" style={{display: this.state.show2}}>
+                <div className="Box proj" style={{display: projects.show2}}>
                     <h2>Grace Shopper</h2>
                     <a href="http://graceshopper-furby.herokuapp.com/products" target="_blank" rel="noopener noreferrer">
                     <img className="Proj-img" src={graceShopperPhoto} alt="Error" />
                     </a>
                     <p>This is an e-commerce website for random items</p>
                 </div>
-                <div className="Box proj" style={{display: this.state.show3}}>
+                <div className="Box proj" style={{display: projects.show3}}>
                     <h2>Meal Wheel</h2>
                     <video className="Proj-img" src={mealWheelDemo} alt={mealWheelPhoto} controls={true} />
                     <p>Can you never decide on where to go out to eat? If so then this is the app for you! Meal Wheel 
                         lets you enter as many restaurants as you want and puts it on the wheel. Then you can either try 
                         to land on a certain one if your quick enough, or just randomly stop it. This app was built with React Native.</p>
                 </div>
-                <div className="Box proj" style={{display: this.state.show4}}>
+                <div className="Box proj" style={{display: projects.show4}}>
                     <h2>Fullstack Fitness</h2>
                     <YouTube videoId="6APp1UMvJSI" opts={{width: "100%"}} alt="Error" className="YouTube"/>
                     <p>Fullstack Fitness is a React Native mobile application that I created for my Hackathon project at Fullstack Academy. I had just over 2 class days to
                         work on this project and it was my first interaction with React Native. This app can track how far you run or bike and a timer to let you know how 
                         long you have been active. There is also an audible notification every 5 minutes that lets you know how far you have traveled.</p>
                 </div>
-                <div className="Box proj" style={{display: this.state.show5}}>
+                <div className="Box proj" style={{display: projects.show5}}>
                     <h2>NBA Stats Search</h2>
                     <a href="https://nba-stats-search.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <img className="Proj-img" src={nbaStatsPhoto} alt="Error" />
                     </a>
                     <p>This application allows users to search for the major NBA stats by player name. It is made using React and Redux</p>
                 </div>
-                <div className="Box proj" style={{display: this.state.show6}}>
+                <div className="Box proj" style={{display: projects.show6}}>
                     <h2>LCA Properties, LLC</h2>
                     <a href="http://www.lcaresidentialproperties.com/" target="_blank" rel="noopener noreferrer">
                         <img className="Proj-img" src={lcaPhoto} alt="Error" />
@@ -87,7 +84,7 @@ export default class Projects extends Component {
                         with express and node on the backend.
                     </p>
                 </div>
-                <div className="Box proj" style={{display: this.state.show7}}>
+                <div className="Box proj" style={{display: projects.show7}}>
                     <h2>Fitness App</h2>
 
                     <p>
@@ -104,7 +101,6 @@ export default class Projects extends Component {
                 </h3>
             </div>
         )
-    }
 }
 
 //use build version!!!! update react???
