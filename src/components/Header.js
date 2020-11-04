@@ -26,16 +26,14 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div>
-                <header className="Header">
-                    <div className="Header-name">Rashaun Warner</div>
-                    <nav className="Nav">
-                            <Link to={`/bio`} onClick={this.clickMe} style={{"textDecoration": this.state.me}}>About Me</Link>
-                            <Link to={`/projects`} onClick={this.clickProj} style={{"textDecoration": this.state.proj}}>Projects</Link>
-                            <Link to={`/blog`} onClick={this.clickBlog} style={{"textDecoration": this.state.blog}}>Blog</Link>
-                    </nav>
-                </header>
-            </div>
+            <header className="Header">
+                <div className="Header-name">Rashaun Warner</div>
+                <nav className="Nav">
+                        <Link to={`/bio`} onClick={this.clickMe} style={{"textDecoration": this.state.me}}>About Me</Link>
+                        <Link to={`/projects`} onClick={this.clickProj} style={{"textDecoration": this.state.proj}}>Projects</Link>
+                        <Link to={`/blog`} onClick={this.clickBlog} style={{"textDecoration": this.state.blog}}>Blog</Link>
+                </nav>
+            </header>
         )
     }
 }

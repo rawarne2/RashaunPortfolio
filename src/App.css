@@ -1,10 +1,10 @@
 .App {
   background-color: rgb(224, 224, 224);
-  padding: 8% 3% 10% 3%;
-  overflow-y: scroll;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 
@@ -23,8 +23,6 @@
 
 .Box {
   border: 10px solid  rgb(82, 82, 82);
-  /* margin: 5vw;
-  padding: 2vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,19 +41,7 @@
 
 .Content {
   width: 75%;
-}
-
-.ElementContainer {
-  height: 300px;
-  margin-bottom: 100px;
-  overflow: scroll;
-  position: relative;
-  display: inline-block;
-  /* display: flex; */
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  font-size: 50px;
+  padding: 8% 0%;
 }
 
 .Footer {
@@ -70,10 +56,8 @@
   border-top-style: double;
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100vw;
+  padding: 4px;
 }
 
 .Footer p {
@@ -172,14 +156,10 @@ h2 {
 
 .Skills img {
   border-radius: 15%;
-  /* height: 20%;
-  width: 20%; */
   height: 150px;
   width: 200px;
   min-height: 100px;
   min-width: 100px;
-  /* margin-bottom: 50px; */
-  /* margin-bottom: 200px */
 }
 
 .YouTube {
