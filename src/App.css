@@ -52,10 +52,10 @@
   align-items: center;
   justify-content: center;
   border-top-color: rgb(135, 206, 235);
-  border-top-width: 1vw;
-  border-top-style: double;
-  border-top-left-radius: 2vw;
-  border-top-right-radius: 2vw;
+  border-top-width: 10px;
+  border-top-style: groove;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   width: 100vw;
   padding: 4px;
 }
@@ -70,11 +70,11 @@
   padding: 0% 4% 0% 4%;
   color: white;
   border-bottom-color: rgb(135, 206, 235);
-  border-bottom-width: 1vw;
-  border-bottom-style: double;
+  border-bottom-width: 10px;
+  border-bottom-style: groove;
   display: flex;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   position: fixed;
   top: 0;
   left: 0;
@@ -83,7 +83,7 @@
 }
 
 .Header-name {
-  font-size: 4.5vw;
+  font-size: 4vw;
   justify-content: center;
   white-space: nowrap;
 }
@@ -135,6 +135,7 @@ h2 {
 
 .ProjectNav {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .ProjectNav h3 {
@@ -184,12 +185,21 @@ h2 {
   }
 
   .App {
-    padding: 20% 3% 25% 3%;
+    height: 100%;
+    justify-content: space-between;
   }
 
   .Content {
     width: 100%;
+    padding-top: 20%;
   } 
+  .Blog {
+    height: 80vh;
+  }
+  .ProjectNav {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
 }
 
 .proj {

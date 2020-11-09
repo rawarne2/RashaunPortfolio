@@ -3,7 +3,7 @@ import es8Blog from '../images/ES8-blog.png'
 
 export default function Blog() {
     return (
-        <div className="Content">
+        <div className="Content Blog">
             <h1>Check out my blog posts on Medium!</h1>
             <div className="Box">
                 <a href="https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c" target="_blank" rel="noopener noreferrer">

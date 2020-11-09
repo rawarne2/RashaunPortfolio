@@ -75,7 +75,9 @@ export default function Bio() {
       </p>
       <p>
         Please get in touch with me if you are interested in having me join your
-        development team or just want to know more about my skills.
+				development team or just want to know more about my skills. Also, this website
+				may load slowly the first time it is loaded because I am using the free version
+				of Heroku and the server sleeps if it is not active for 30 minutes.
       </p>
       <div className="Skills">
         <h1>Here are my skills!</h1>
