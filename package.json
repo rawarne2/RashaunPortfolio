@@ -20,7 +20,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://www.rashaunwarner.com",
+  "homepage": "http://www.rashaunwarner.com/",
   "browserslist": {
     "production": [
       ">0.2%",
